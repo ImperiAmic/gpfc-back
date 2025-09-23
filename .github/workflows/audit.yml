@@ -18,7 +18,7 @@ jobs:
           fail: true
 
       - name: 🙈 Ensure node_modules is ignored by Git
-        uses: dkershner6/gitignore-parser@v2
+        uses: dkershner6/gitignore-parser@d49f9db49a5635ec1c218604d245bfc7feed1141
         with:
           must_deny: "node_modules"
 
