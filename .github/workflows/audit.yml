@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: ❓ Check if .editorconfig exists
-        uses: andstor/file-existence-action@v3
+        uses: andstor/file-existence-action@31a502724c77ada11ba0b3442e34757182ccdbd3
         with:
           files: ".editorconfig"
           fail: true
