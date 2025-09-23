@@ -1,6 +1,6 @@
 # 🐲 Godzilla Poblenou Fan Club – Back End
 
-This is the backend service for the Godzilla Poblenou Fan Club application. **Built with Typescript and using Express and MongoDB**, this API REST enables management of Godzilla films data.
+This is the back-end service for the Godzilla Poblenou Fan Club application. **Built with Typescript and using Express and MongoDB**, this API REST enables management of Godzilla films data.
 
 _SKREE-ONK!_
 
@@ -36,13 +36,13 @@ Welcome to the **Godzilla Poblenou Fan Club** back-end repository. This service 
 
 ## 3. Core Stack
 
-- TypeScript for development.
-- Node.js for JavaScript runtime.
-- Express as the server framework.
-- MongoDB as the database.
-- Mongoose as the MongoDB object modeling.
-- Jest for test environment.
-- Render for deployment.
+- **TypeScript** for development.
+- **Node.js** for JavaScript runtime.
+- **Express** as the server framework.
+- **MongoDB** as the database.
+- **Mongoose** as the MongoDB object modeling.
+- **Jest** for test environment.
+- **Render** for deployment.
 
 ---
 
@@ -77,13 +77,13 @@ npm start
 ## 5. Available Scripts
 
 ```bash
-npm start               # Start production server
-npm run start:dev       # Start production server on watch mode
+npm start               # NOT AVAILABLE YET # Start production server
+npm run start:dev       # NOT AVAILABLE YET # Start production server on watch mode
 npm run build           # Compiles .ts files in src folder
 npm run build:dev       # Compiles .ts files in src folder on watch mode
-npm test                # Run tests
-npm run test:dev        # Run tests on watch mode
-npm run test:coverage   # Run tests coverage
+npm test                # Run NOT AVAILABLE YET # tests
+npm run test:dev        # Run NOT AVAILABLE YET # tests on watch mode
+npm run test:coverage   # Run NOT AVAILABLE YET # tests coverage
 ```
 
 ---
