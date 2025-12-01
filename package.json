@@ -15,7 +15,10 @@
     "start:dev": "node --watch .",
     "build": "tsc",
     "build:dev": "tsc -w",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "jest",
+    "test:dev": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "debug": "^4.4.3",
@@ -28,14 +31,21 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.36.0",
+    "@jest/globals": "^30.2.0",
     "@types/debug": "^4.1.12",
     "@types/express": "^5.0.5",
+    "@types/jest": "^30.0.0",
     "@types/morgan": "^1.9.10",
+    "@types/supertest": "^6.0.3",
     "eslint": "^9.36.0",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
+    "jest": "^30.2.0",
     "lint-staged": "^16.2.0",
     "prettier": "3.6.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
+    "ts-jest-resolver": "^2.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.1"
