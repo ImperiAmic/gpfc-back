@@ -1,6 +1,6 @@
 import createDebug from "debug";
-import { styleText } from "node:util";
 import app from "./app.js";
+import { styleText } from "node:util";
 
 const debug = createDebug("godzillas:server:start");
 

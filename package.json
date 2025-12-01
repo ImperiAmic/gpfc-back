@@ -1,7 +1,14 @@
 {
   "name": "gpfc-back",
   "version": "1.0.0",
-  "description": "",
+  "description": "Godzilla Poblenou Fan Club - Back End API",
+  "license": "CC BY-NC-SA 4.0",
+  "author": "Raimon Solà Claver",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ImperiAmic/gpfc-back"
+  },
+  "type": "module",
   "main": "dist/",
   "scripts": {
     "start": "node .",
@@ -10,10 +17,13 @@
     "build:dev": "tsc -w",
     "prepare": "husky"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
@@ -29,11 +39,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.1"
-  },
-  "dependencies": {
-    "debug": "^4.4.3",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "morgan": "^1.10.1"
   }
 }
