@@ -13,14 +13,17 @@ const handleErrors = (
   _next: NextFunction,
 ): void => {
   debug(error.message);
-  debug(error.stack);
+  debug(error.stack ?? "No stack trace available");
 
-  res.status(error.statusCode ?? statusCodes.INTERNAL_SERVER_ERROR).json({
+  const statusCode = error.statusCode ?? statusCodes.INTERNAL_SERVER_ERROR;
+  const errorMessage = {
     error:
       error instanceof ServerError && error.message
         ? error.message
-        : "Server error",
-  });
+        : "Internal server error",
+  };
+
+  res.status(statusCode).json(errorMessage);
 };
 
 export default handleErrors;

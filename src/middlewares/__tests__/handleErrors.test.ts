@@ -38,8 +38,8 @@ describe("Given the handleErrors middleware", () => {
   describe("When it receives a response and an error with status code 404 but without a message", () => {
     const error = new ServerError(statusCodes.NOT_FOUND);
 
-    test("Then it should call the response's json method with 'Server error' message", () => {
-      const expectedErrorMessage = { error: "Server error" };
+    test("Then it should call the response's json method with 'Internal server error' message", () => {
+      const expectedErrorMessage = { error: "Internal server error" };
 
       handleErrors(error, req as Request, res as Response, next);
 
@@ -58,8 +58,8 @@ describe("Given the handleErrors middleware", () => {
       expect(res.status).toHaveBeenCalledWith(expectedStatusCode);
     });
 
-    test("Then it should call the response's json method with 'Server error' message", () => {
-      const expectedErrorMessage = { error: "Server error" };
+    test("Then it should call the response's json method with 'Internal server error' message", () => {
+      const expectedErrorMessage = { error: "Internal server error" };
 
       handleErrors(error as ServerError, req as Request, res as Response, next);
 
